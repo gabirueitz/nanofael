@@ -115,6 +115,20 @@ html {
 }
 
 .footer {
+    font-size: 1.6rem;
+    color: #ffffff;
     grid-area: footer;
     background-color: #aaaaaa;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a {
+    color: #ffffff;
+}
+
+.footer a:hover {
+    color: var(--color1);
 }
