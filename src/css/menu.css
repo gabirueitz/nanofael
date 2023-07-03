@@ -1,0 +1,63 @@
+:root {
+    --bg-color: #ff6400;
+    --font-color: #ffffff
+}
+
+.logo {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    opacity: 0.3;
+}
+
+.sidebar {
+    height: 100vh;
+    min-height: 500px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.sidebar:hover {
+    width: 200px;
+    overflow: visible;
+}
+
+.nav {
+    height: 60vh;
+    min-height: 300px;
+}
+
+.nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav ul li a {
+    font-size: 2rem;
+    color: var(--font-color);
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav ul li a:hover {
+    background-color: var(--font-color);
+    color: var(--bg-color);
+}
+
+.nav .fa-solid {
+    width: 60px;
+    font-size: 2.2rem;
+    text-align: center;
+}
