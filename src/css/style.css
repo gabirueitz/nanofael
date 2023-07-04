@@ -60,7 +60,7 @@ html {
 
 .main {
     grid-area: main;
-    padding: 10%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -118,7 +118,7 @@ html {
 
 .aside ul li a img {
     width: 200px;
-    transition: all .2s ease-in-out;;
+    transition: all .2s ease-in-out;
 }
 
 .aside ul li a:hover img {
@@ -126,7 +126,7 @@ html {
 }
 
 .footer {
-    font-size: min(2vh, 2rem);
+    font-size: min(1.5vh, 2rem);
     color: #ffffff;
     grid-area: footer;
     background-color: var(--color2);
@@ -173,5 +173,4 @@ html {
     .aside ul li a img {
         width: 65%;
     }
-
 }
