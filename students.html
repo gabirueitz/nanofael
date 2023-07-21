@@ -4,15 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NanoFaEl: Professores</title>
+    <title>NanoFaEl: Estudantes</title>
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/menu.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/animations.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.9/jquery.csv.min.js"
+        integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -48,8 +59,18 @@
             </div>
         </header>
         <main class="main">
-
+            <h1>Estudantes</h1>
+            <div id="studentsList"></div>
         </main>
+
+        <aside class="aside">
+            <h2>━ Navegue ━</h2>
+            <div>
+                <p><a href="#graduacao"><i class="fa-solid fa-atom"></i> Graduação</a></p>
+                <p><a href="#mestrado"><i class="fa-solid fa-atom"></i> Mestrado</a></p>
+                <p><a href="#doutorado"><i class="fa-solid fa-atom"></i> Doutorado</a></p>
+            </div>
+        </aside>
 
         <footer class="footer">
             <p><a href="https://goo.gl/maps/YHssZdeE8DBZ5i3T8" target="_blank"><i class="fa-solid fa-location-dot"></i>
@@ -59,6 +80,11 @@
             <p><i class="fa-solid fa-phone"></i> (16) 3351-8214</p>
         </footer>
     </div>
+
+    <button onclick="topFunction()" id="upButton"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="./src/js/students.js"></script>
+    <script src="./src/js/upFunction.js"></script>
 
 </body>
 

@@ -1,0 +1,51 @@
+@keyframes wobble {
+    0% {
+        transform: translateX(0%);
+    }
+
+    15% {
+        transform: translateX(-25%) rotate(-10deg);
+    }
+
+    30% {
+        transform: translateX(20%) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15%) rotate(-6deg);
+    }
+
+    60% {
+        transform: translateX(10%) rotate(4deg);
+    }
+
+    75% {
+        transform: translateX(-5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0%);
+    }
+
+    25% {
+        transform: translateY(-15%);
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+    75% {
+        transform: translateY(15%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
