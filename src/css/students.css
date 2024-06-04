@@ -1,0 +1,68 @@
+#studentsLists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#studentsLists .photoCard {
+	position: relative;
+    width: 320px;
+    aspect-ratio: 1/1;
+}
+
+#studentsLists .photoCard img {
+    object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+#studentsLists .photoCard .textInfo {
+	position: absolute;
+    width: 320px;
+	padding: 10px;
+	bottom: 0;
+	background-color: var(--transparent-white);
+}
+
+.photoCard .textInfo p {
+	margin: 0px;
+}
+
+.photoCard .textInfo > p:nth-child(1) {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+.photoCard .textInfo > p:nth-child(2) {
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.photoCard .textInfo .moreText {
+	display: none;
+}
+
+.moreText .buttons {
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+    margin-top: 50px;
+    bottom: 0;
+}
+
+#studentsLists .photoCard:hover img {
+	opacity: 0.5;
+}
+
+#studentsLists .photoCard:hover .textInfo {
+	height: 100%;
+}
+
+.photoCard:hover .textInfo .moreText {
+	display: block;
+}
+
+.moreText .buttons a:hover {
+    color: var(--color1);
+}
