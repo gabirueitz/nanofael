@@ -11,7 +11,7 @@ $.ajax({
 	success: function (result) {
 		CSVdata = $.csv.toObjects(result);
 		for (let i = 0; i < result.length; i++) {
-			if (CSVdata[i].Categoria === "Pos-Doc") {
+			if (CSVdata[i].Categoria === "Pos-Doc" || CSVdata[i].Categoria === "Pesquisador Visitante") {
 				const str = CSVdata[i].Foto;
 				const photoId = str.split("=");
 				const photoLink = urlPhoto + photoId[1] + photoSize;
@@ -30,7 +30,7 @@ $.ajax({
 					")</p>" +
 					'<div class="moreText">' +
 					"<br />" +
-					'<p class="advisor"><strong>Orientador:</strong> ' +
+					'<p class="advisor"><strong>Supervisor:</strong> ' +
 					CSVdata[i].Orientador +
 					"</p>" +
 					'<div class="buttons">' +

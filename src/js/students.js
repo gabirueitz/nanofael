@@ -11,7 +11,7 @@ $.ajax({
         CSVdata = $.csv.toObjects(result);
         for (let i = 0; i < result.length; i++) {
 
-            if (CSVdata[i].Categoria === 'Pos-Doc') {
+            if (CSVdata[i].Categoria === "Pos-Doc" || CSVdata[i].Categoria === "Pesquisador Visitante") {
                 n++;
             } else {
             const str = CSVdata[i].Foto
