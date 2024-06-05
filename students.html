@@ -112,23 +112,38 @@
 			</header>
 			<main class="main">
 				<h1>Estudantes</h1>
-				<div id="studentsLists">
-				</div>
+				<div id="studentsLists"></div>
 			</main>
 
 			<aside class="aside">
 				<h2>━ Navegue ━</h2>
-				<div>
-					<p>
-						<a href="#graduacao"><i class="fa-solid fa-atom"></i> Graduação</a>
-					</p>
-					<p>
-						<a href="#mestrado"><i class="fa-solid fa-atom"></i> Mestrado</a>
-					</p>
-					<p>
-						<a href="#doutorado"><i class="fa-solid fa-atom"></i> Doutorado</a>
-					</p>
-				</div>
+				<form action="">
+					<div>
+						<input type="radio" name="category" id="todos" checked />
+						<label for="todos"><i class="fa-solid fa-atom"></i> Todos</label>
+					</div>
+
+					<div>
+						<input type="radio" name="category" id="graduacao" />
+						<label for="graduacao"
+							><i class="fa-solid fa-atom"></i> Graduação</label
+						>
+					</div>
+
+					<div>
+						<input type="radio" name="category" id="mestrado" />
+						<label for="mestrado"
+							><i class="fa-solid fa-atom"></i> Mestrado</label
+						>
+					</div>
+
+					<div>
+						<input type="radio" name="category" id="doutorado" />
+						<label for="doutorado"
+							><i class="fa-solid fa-atom"></i> Doutorado</label
+						>
+					</div>
+				</form>
 			</aside>
 
 			<footer class="footer">
@@ -150,6 +165,7 @@
 		</button>
 
 		<script src="./src/js/students.js"></script>
+		<script src="./src/js/categorize.js"></script>
 		<script src="./src/js/upFunction.js"></script>
 	</body>
 </html>

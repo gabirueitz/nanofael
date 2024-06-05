@@ -5,6 +5,7 @@ const urlPhoto = "https://drive.google.com/thumbnail?id=";
 const photoSize = "&sz=w1000";
 let n = 0;
 
+//Construct Page
 $.ajax({
 	type: "GET",
 	url: url,
@@ -19,12 +20,23 @@ $.ajax({
 			) {
 				n++;
 			} else {
+				let category = "";
+
+				if (sorted[i].Categoria === "Graduação") {
+					sorted[i].category = "graduacao";
+				} else if (sorted[i].Categoria === "Mestrado") {
+					sorted[i].category = "mestrado";
+				} else if (sorted[i].Categoria === "Doutorado") {
+					sorted[i].category = "doutorado";
+				}
 				const str = sorted[i].Foto;
 				const photoId = str.split("=");
 				const photoLink = urlPhoto + photoId[1] + photoSize;
 
 				document.getElementById("studentsLists").innerHTML +=
-					'<div class="photoCard">' +
+					'<div class="photoCard ' +
+					sorted[i].category +
+					'">' +
 					'<img src="' +
 					photoLink +
 					'" alt="Profile photo" />' +
@@ -52,3 +64,34 @@ $.ajax({
 		}
 	},
 });
+
+//Select Category
+const options = document.querySelectorAll('input[name="category"]');
+for (let option = 0; option < options.length; option++) {
+	options[option].addEventListener("change", (event) => {
+		selectCategory();
+	});
+}
+
+function selectCategory() {
+	const categorySelected = document.querySelector(
+		'input[name="category"]:checked'
+	).id;
+	const allCards = document.getElementsByClassName("photoCard");
+	const toShow = document.getElementsByClassName(categorySelected);
+
+	if (categorySelected === "todos") {
+		for (let cardNumber = 0; cardNumber < allCards.length; cardNumber++) {
+			allCards[cardNumber].classList.remove("hidden");
+		}
+		
+	} else {
+		for (let cardNumber = 0; cardNumber < allCards.length; cardNumber++) {
+			allCards[cardNumber].classList.add("hidden");
+		}
+
+		for (let cardNumber = 0; cardNumber < toShow.length; cardNumber++) {
+			toShow[cardNumber].classList.remove("hidden");
+		}
+	}
+}

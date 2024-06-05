@@ -12,8 +12,9 @@
 
 #equipList {
 	display: flex;
-	gap: 35px;
 	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
 }
 
 .equipCard .photoFrame {
