@@ -1,67 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NanoFaEl: Equipamentos</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NanoFaEl: Equipamentos</title>
+		<link rel="stylesheet" href="./src/css/reset.css" />
+		<link rel="stylesheet" href="./src/css/menu.css" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="./src/css/facilities.css" />
+		<link rel="stylesheet" href="./src/css/responsive.css" />
+		<link rel="stylesheet" href="./src/css/animations.css" />
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/menu.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
-    <link rel="stylesheet" href="./src/css/animations.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+	</head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+	<body>
+        
+		<div class="sidebar">
+			<div class="scienceIcon">
+				<img
+					class="icon"
+					src="./src/images/science_icon.svg"
+					alt="science icon" />
+			</div>
 
-<body>
-    <div class="sidebar">
-        <div class="scienceIcon">
-            <img class="icon" src="./src/images/science_icon.svg" alt="science icon">
-        </div>
+			<nav class="nav">
+				<ul class="navLinks">
+					<li>
+						<a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+					</li>
+					<li>
+						<a href="professors.html"
+							><i class="fa-solid fa-person-chalkboard"></i> Professores</a
+						>
+					</li>
+					<li>
+						<a href="researchers.html"
+							><i class="fa-solid fa-flask-vial"></i> Pesquisadores</a
+						>
+					</li>
+					<li>
+						<a href="students.html"
+							><i class="fa-solid fa-people-group"></i> Alunos</a
+						>
+					</li>
+					<li>
+						<a href="facilities.html"
+							><i class="fa-solid fa-microscope"></i> Espaço Físico</a
+						>
+					</li>
+					<li>
+						<a href="projects.html"
+							><i class="fa-solid fa-diagram-project"></i> Projetos</a
+						>
+					</li>
+					<li>
+						<a href="publications.html"
+							><i class="fa-solid fa-book-open"></i> Publicações</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</div>
 
-        <nav class="nav">
-            <ul class="navLinks">
-                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="professors.html"><i class="fa-solid fa-person-chalkboard"></i> Professores</a></li>
-                <li><a href="researchers.html"><i class="fa-solid fa-flask-vial"></i> Pesquisadores</a></li>
-                <li><a href="students.html"><i class="fa-solid fa-people-group"></i> Alunos</a></li>
-                <li><a href="facilities.html"><i class="fa-solid fa-microscope"></i> Espaço Físico</a></li>
-                <li><a href="projects.html"><i class="fa-solid fa-diagram-project"></i> Projetos</a></li>
-                <li><a href="publications.html"><i class="fa-solid fa-book-open"></i> Publicações</a></li>
-            </ul>
-        </nav>
-    </div>
+		<div class="content">
+			<header class="header">
+				<img src="./src/images/logo.png" alt="NanoFaEl" class="logoNano" />
+				<div class="images">
+					<div
+						class="headerImg"
+						style="background-image: url('./src/images/img1.jpg')"></div>
+					<div
+						class="headerImg"
+						style="background-image: url('./src/images/img2.jpg')"></div>
+					<div
+						class="headerImg"
+						style="background-image: url('./src/images/img3.jpg')"></div>
+					<div
+						class="headerImg"
+						style="background-image: url('./src/images/img4.jpg')"></div>
+					<div
+						class="headerImg"
+						style="background-image: url('./src/images/img5.jpg')"></div>
+					<div
+						class="headerImg"
+						style="background-image: url('./src/images/img6.jpg')"></div>
+					<div
+						class="imageLIEC"
+						style="background-image: url('./src/images/liec_novo.jpg')"></div>
+				</div>
+			</header>
+			<main class="main">
+				<h1>Equipamentos</h1>
+				<div id="equipList"></div>
+			</main>
 
-    <div class="content">
-        <header class="header">
-            <img src="./src/images/logo.png" alt="NanoFaEl" class="logoNano">
-            <div class="images">
-                <div class="headerImg" style="background-image: url('./src/images/img1.jpg');"></div>
-                <div class="headerImg" style="background-image: url('./src/images/img2.jpg');"></div>
-                <div class="headerImg" style="background-image: url('./src/images/img3.jpg');"></div>
-                <div class="headerImg" style="background-image: url('./src/images/img4.jpg');"></div>
-                <div class="headerImg" style="background-image: url('./src/images/img5.jpg');"></div>
-                <div class="headerImg" style="background-image: url('./src/images/img6.jpg');"></div>
-                <div class="imageLIEC" style="background-image: url('./src/images/liec_novo.jpg');"></div>
-            </div>
-        </header>
-        <main class="main">
+			<footer class="footer">
+				<p>
+					<a href="https://goo.gl/maps/YHssZdeE8DBZ5i3T8" target="_blank"
+						><i class="fa-solid fa-location-dot"></i> Encontre-nos no mapa!</a
+					>
+				</p>
+				<p>
+					<i class="fa-solid fa-map"></i> <strong>DQ-UFSCar:</strong> Rod.
+					Washington Luís, Km 235 ━ São Carlos, SP
+				</p>
+				<p><i class="fa-solid fa-phone"></i> (16) 3351-8214</p>
+			</footer>
+		</div>
 
-        </main>
-
-        <footer class="footer">
-            <p><a href="https://goo.gl/maps/YHssZdeE8DBZ5i3T8" target="_blank"><i class="fa-solid fa-location-dot"></i>
-                    Encontre-nos no mapa!</a></p>
-            <p><i class="fa-solid fa-map"></i> <strong>DQ-UFSCar:</strong> Rod. Washington Luís, Km 235 ━ São Carlos, SP
-            </p>
-            <p><i class="fa-solid fa-phone"></i> (16) 3351-8214</p>
-        </footer>
-    </div>
-
-</body>
-
+        <script src="./src/js/equipData.js"></script>
+        <script src="./src/js/facilities.js"></script>
+	</body>
 </html>

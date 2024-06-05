@@ -10,12 +10,15 @@ $.ajax({
 	url: url,
 	success: function (result) {
 		CSVdata = $.csv.toObjects(result);
+		CSVdata = $.csv.toObjects(result);
+		let sorted = CSVdata.sort((a, b) => a.Nome.localeCompare(b.Nome));
+
 		for (let i = 0; i < result.length; i++) {
 			if (
-				CSVdata[i].Categoria === "Pos-Doc" ||
-				CSVdata[i].Categoria === "Professor Visitante"
+				sorted[i].Categoria === "Pos-Doc" ||
+				sorted[i].Categoria === "Professor Visitante"
 			) {
-				const str = CSVdata[i].Foto;
+				const str = sorted[i].Foto;
 				const photoId = str.split("=");
 				const photoLink = urlPhoto + photoId[1] + photoSize;
 
@@ -26,22 +29,22 @@ $.ajax({
 					'" alt="Profile photo" />' +
 					'<div class="textInfo">' +
 					"<p>" +
-					CSVdata[i].Nome +
+					sorted[i].Nome +
 					"</p>" +
 					'<p class="category">(' +
-					CSVdata[i].Categoria +
+					sorted[i].Categoria +
 					")</p>" +
 					'<div class="moreText">' +
 					"<br />" +
 					'<p class="advisor"><strong>Supervisor:</strong> ' +
-					CSVdata[i].Orientador +
+					sorted[i].Orientador +
 					"</p>" +
 					'<div class="buttons">' +
 					'<a href="' +
-					CSVdata[i].Lattes +
+					sorted[i].Lattes +
 					'" target="_blank"><i class="ai ai-lattes"></i> Lattes</a>' +
 					'<a href="' +
-					CSVdata[i].Scholar +
+					sorted[i].Scholar +
 					'" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>' +
 					"</div></div></div></div>";
 			} else {

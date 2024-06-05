@@ -1,0 +1,48 @@
+.content {
+	height: 100vh;
+	margin-left: 60px;
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"main main"
+		"footer footer";
+	grid-template-columns: auto 300px;
+	grid-template-rows: 200px auto var(--footer-heigh);
+}
+
+#equipList {
+	display: flex;
+	gap: 35px;
+	flex-wrap: wrap;
+}
+
+.equipCard .photoFrame {
+	width: 300px;
+	aspect-ratio: 1/1;
+}
+
+.equipCard .photoFrame img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.equipCard .textInfo {
+    width: 300px;
+	height: 100px;
+	padding: 10px;
+	background-color: var(--transparent-black);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.equipCard .textInfo h3 {
+	font-size: 1.7em;
+	text-align: center;
+}
+
+.equipCard .textInfo a {
+	font-size: 1.4em;
+}
