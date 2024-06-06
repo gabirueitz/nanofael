@@ -115,46 +115,8 @@ html {
 	text-align: justify;
 }
 
-.main .cards {
-	padding: 50px 0;
-	border-bottom: 1px solid var(--color2);
-}
-
-.main .profile {
-	max-width: 200px;
-	border-radius: 10px;
-	margin-bottom: 20px;
-}
-
-.cards .buttons {
-	display: flex;
-	gap: 10px;
-	flex-wrap: wrap;
-	flex-shrink: 0;
-}
-
-.cards .buttons a {
-	font-size: 1.7rem;
-	color: #fff;
-	padding: 5px 15px;
-	background-color: var(--color3);
-	margin-top: 20px;
-	border-radius: 15px;
-	box-shadow: 3px 3px 5px var(--color2);
-}
-
-.cards .buttons a:hover {
-	background-color: var(--color1);
-}
-
-.cards .buttons a:active {
-	transform: translate(2px, 2px);
-}
-
-.cards .cardText p {
+.textBlock {
 	text-align: justify;
-	text-justify: inter-word;
-	text-indent: 2em;
 }
 
 .textBlock a {
@@ -182,6 +144,58 @@ html {
 	padding: 5px 10px;
 	margin: 5px 0;
 	border-radius: 5px;
+}
+
+.main .cards {
+	padding: 50px 0;
+	border-bottom: 1px solid var(--color2);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.main .profile {
+	width: 280px;
+	height: 100%;
+	border-radius: 10px;
+	aspect-ratio: 1/1;
+}
+
+.cards .cardText {
+	max-width: calc(100% - 310px);
+	min-width: 300px;
+}
+
+.cards .cardText p {
+	text-align: justify;
+	text-justify: inter-word;
+	text-indent: 2em;
+}
+
+.cards .buttons {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+}
+
+.cards .buttons a {
+	font-size: 1.7rem;
+	color: #fff;
+	padding: 5px 15px;
+	background-color: var(--color3);
+	margin-top: 20px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 5px var(--color2);
+}
+
+.cards .buttons a:hover {
+	background-color: var(--color1);
+}
+
+.cards .buttons a:active {
+	transform: translate(2px, 2px);
 }
 
 .aside {
