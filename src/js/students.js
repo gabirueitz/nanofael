@@ -20,8 +20,6 @@ $.ajax({
 			) {
 				n++;
 			} else {
-				let category = "";
-
 				if (sorted[i].Categoria === "Graduação") {
 					sorted[i].category = "graduacao";
 				} else if (sorted[i].Categoria === "Mestrado") {

@@ -1,76 +1,204 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NanoFaEl: Publicações</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NanoFaEl: Publicações</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./src/images/apple-touch-icon.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./src/images/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./src/images/favicon-16x16.png" />
+		<link rel="manifest" href="./src/images/site.webmanifest" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/images/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon-16x16.png" />
-    <link rel="manifest" href="./src/images/site.webmanifest" />
+		<link rel="stylesheet" href="./src/css/reset.css" />
+		<link rel="stylesheet" href="./src/css/menu.css" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="./src/css/publications.css" />
+		<link rel="stylesheet" href="./src/css/responsive.css" />
+		<link rel="stylesheet" href="./src/css/animations.css" />
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/menu.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
-    <link rel="stylesheet" href="./src/css/animations.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+			integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
 
-<body>
-    <div class="sidebar">
-        <div class="scienceIcon">
-            <img class="icon" src="./src/images/science_icon.svg" alt="science icon">
-        </div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.9/jquery.csv.min.js"
+			integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+	</head>
 
-        <nav class="nav">
-            <ul class="navLinks">
-                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="professors.html"><i class="fa-solid fa-person-chalkboard"></i> Professores</a></li>
-                <li><a href="researchers.html"><i class="fa-solid fa-flask-vial"></i> Pesquisadores</a></li>
-                <li><a href="students.html"><i class="fa-solid fa-people-group"></i> Alunos</a></li>
-                <li><a href="facilities.html"><i class="fa-solid fa-microscope"></i> Espaço Físico</a></li>
-                <li><a href="projects.html"><i class="fa-solid fa-diagram-project"></i> Projetos</a></li>
-                <li><a href="publications.html"><i class="fa-solid fa-book-open"></i> Publicações</a></li>
-            </ul>
-        </nav>
-    </div>
+	<body>
+		<div class="sidebar">
+			<div class="scienceIcon">
+				<img
+					class="icon"
+					src="./src/images/science_icon.svg"
+					alt="science icon" />
+			</div>
 
-    <div class="content">
-        <header class="header">
-            <img src="./src/images/logo.png" alt="NanoFaEl" class="logoNano">
-            <div class="images">
-                <div class="headerImg" style="background-image: url('./src/images/img1.jpg');"></div>
-                <div class="headerImg" style="background-image: url('./src/images/img2.jpg');"></div>
-                <div class="headerImg" style="background-image: url('./src/images/img3.jpg');"></div>
-                <div class="headerImg" style="background-image: url('./src/images/img4.jpg');"></div>
-                <div class="headerImg" style="background-image: url('./src/images/img5.jpg');"></div>
-                <div class="headerImg" style="background-image: url('./src/images/img6.jpg');"></div>
-                <div class="imageLIEC" style="background-image: url('./src/images/liec_novo.jpg');"></div>
-            </div>
-        </header>
-        <main class="main">
-            <h1>Publicações</h1>
-        </main>
+			<nav class="nav">
+				<ul class="navLinks">
+					<li>
+						<a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+					</li>
+					<li>
+						<a href="professors.html"
+							><i class="fa-solid fa-person-chalkboard"></i> Professores</a
+						>
+					</li>
+					<li>
+						<a href="researchers.html"
+							><i class="fa-solid fa-flask-vial"></i> Pesquisadores</a
+						>
+					</li>
+					<li>
+						<a href="students.html"
+							><i class="fa-solid fa-people-group"></i> Alunos</a
+						>
+					</li>
+					<li>
+						<a href="facilities.html"
+							><i class="fa-solid fa-microscope"></i> Espaço Físico</a
+						>
+					</li>
+					<li>
+						<a href="projects.html"
+							><i class="fa-solid fa-diagram-project"></i> Projetos</a
+						>
+					</li>
+					<li>
+						<a href="publications.html"
+							><i class="fa-solid fa-book-open"></i> Publicações</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</div>
 
-        <footer class="footer">
-            <p><a href="https://goo.gl/maps/YHssZdeE8DBZ5i3T8" target="_blank"><i class="fa-solid fa-location-dot"></i>
-                    Encontre-nos no mapa!</a></p>
-            <p><i class="fa-solid fa-map"></i> <strong>DQ-UFSCar:</strong> Rod. Washington Luís, Km 235 ━ São Carlos, SP
-            </p>
-            <p><i class="fa-solid fa-phone"></i> (16) 3351-8214</p>
-        </footer>
-    </div>
+		<div class="content">
+			<header class="header">
+				<img src="./src/images/logo.png" alt="NanoFaEl" class="logoNano" />
+				<div class="images">
+					<div
+						class="headerImg"
+						style="background-image: url('./src/images/img1.jpg')"></div>
+					<div
+						class="headerImg"
+						style="background-image: url('./src/images/img2.jpg')"></div>
+					<div
+						class="headerImg"
+						style="background-image: url('./src/images/img3.jpg')"></div>
+					<div
+						class="headerImg"
+						style="background-image: url('./src/images/img4.jpg')"></div>
+					<div
+						class="headerImg"
+						style="background-image: url('./src/images/img5.jpg')"></div>
+					<div
+						class="headerImg"
+						style="background-image: url('./src/images/img6.jpg')"></div>
+					<div
+						class="imageLIEC"
+						style="background-image: url('./src/images/liec_novo.jpg')"></div>
+				</div>
+			</header>
+			<main class="main">
+				<h1>Publicações Recentes</h1>
+				<p class="subtitle">
+					(as publicações são atualizadas usando a base de dados
+					<a href="https://www.scopus.com" target="_blank">Scopus</a>)
+				</p>
+				<br />
+				<div id="papersList"></div>
+			</main>
 
-    <button onclick="topFunction()" id="upButton"><i class="fa-solid fa-arrow-up"></i></button>
+			<aside class="aside">
+				<h2>━ Filtros ━</h2>
+				<form action="">
+					<h3>Orientador</h3>
+					<div>
+						<input type="checkbox" name="category" id="elton" value="Sitta"/>
+						<label for="elton"
+							></i>Prof. Dr. Elton</label
+						>
+					</div>
 
-    <script src="./src/js/upFunction.js"></script>
+					<div>
+						<input type="checkbox" name="category" id="ernesto" value="Pereira"/>
+						<label for="ernesto"
+							></i>Prof. Dr. Ernesto</label
+						>
+					</div>
 
-</body>
+					<div>
+						<input type="checkbox" name="category" id="lucia" value="Mascaro"/>
+						<label for="lucia"
+							></i>Profa. Dra. Lúcia</label
+						>
+					</div>
+					<br>
+					<h3>Ano de Publicação</h3>
+					<div>
+						<input type="checkbox" class="yearOption" name="category" id="year1" value=""/>
+						<label for="ano1"> </label
+						>
+					</div>
 
+					<div>
+						<input type="checkbox" class="yearOption" name="category" id="year2" value=""/>
+						<label for="ano2"> </label
+						>
+					</div>
+
+					<div>
+						<input type="checkbox" class="yearOption" name="category" id="year3" value=""/>
+						<label for="ano3"> </label
+						>
+					</div>
+					<button id="apply" type="submit">Filtrar</button>
+				</form>
+			</aside>
+
+			<footer class="footer">
+				<p>
+					<a href="https://goo.gl/maps/YHssZdeE8DBZ5i3T8" target="_blank"
+						><i class="fa-solid fa-location-dot"></i> Encontre-nos no mapa!</a
+					>
+				</p>
+				<p>
+					<i class="fa-solid fa-map"></i> <strong>DQ-UFSCar:</strong> Rod.
+					Washington Luís, Km 235 ━ São Carlos, SP
+				</p>
+				<p><i class="fa-solid fa-phone"></i> (16) 3351-8214</p>
+			</footer>
+		</div>
+
+		<button onclick="topFunction()" id="upButton">
+			<i class="fa-solid fa-arrow-up"></i>
+		</button>
+
+		<script src="./src/js/publications.js"></script>
+		<script src="./src/js/upFunction.js"></script>
+	</body>
 </html>

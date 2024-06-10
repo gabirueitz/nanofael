@@ -230,37 +230,6 @@ html {
 	margin-bottom: 1.5rem;
 }
 
-.aside form {
-	display: flex;
-	flex-direction: column;
-}
-
-.aside form input[type="radio"] {
-	display: none;
-}
-
-.aside p,
-.aside form label {
-	font-size: 2rem;
-	margin: 1rem 0;
-}
-
-.aside form label {
-	margin: 0;
-	padding: 0.5rem;
-	display: inline-block;
-}
-
-.aside p a:hover,
-.aside form label:hover {
-	color: var(--color1);
-}
-
-.aside form :checked + label {
-	color: #fff;
-	background-color: var(--color1);
-}
-
 .footer {
 	font-size: 1.6rem;
 	color: #ffffff;

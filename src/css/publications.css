@@ -1,0 +1,82 @@
+.main .subtitle {
+	font-size: 1.5em;
+}
+
+.main a {
+	color: var(--color1);
+}
+
+.citationEntry {
+	display: flex;
+	gap: 1rem;
+}
+
+.citationEntry .title {
+	font-style: italic;
+}
+
+.citationEntry .year {
+	font-weight: bold;
+}
+
+.aside h3 {
+	font-size: 2rem;
+	margin: 10px 0 5px 0;
+}
+
+input[type="checkbox"] {
+	width: 1.8rem;
+	aspect-ratio: 1/1;
+	accent-color: var(--color1);
+}
+
+.aside form {
+	display: flex;
+	flex-direction: column;
+}
+
+.aside form input[type="radio"] {
+	display: none;
+}
+
+.aside p,
+.aside form label {
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+
+.aside form label {
+	margin: 0;
+	padding: 0.5rem;
+	display: inline-block;
+}
+
+.aside p a:hover,
+.aside form label:hover {
+	color: var(--color1);
+}
+
+.aside form :checked + label {
+	color: var(--color1);
+}
+
+#apply {
+	width: 180px;
+	height: 30px;
+	margin: 20px auto;
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: bold;
+	background-color: var(--color1);
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	cursor: pointer;
+}
+
+#apply:active {
+	transform: translate(3px, 3px);
+}
+
+.hidden {
+	display: none;
+}
